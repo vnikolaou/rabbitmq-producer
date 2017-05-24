@@ -1,0 +1,4 @@
+com\test\TestController.class
+com\test\RabbitMQConfiguration.class
+com\test\Application.class
+com\test\Producer.class
