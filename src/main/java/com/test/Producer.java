@@ -42,7 +42,7 @@ public class Producer {
 					.withBody(byteOut.toByteArray())
 					.setContentType(MessageProperties.CONTENT_TYPE_TEXT_PLAIN)
 					.setCorrelationId(correlationID.getBytes()).build();
-			rabbitTemplate.send("ebay-exchange", "fetch-listings-queue", message);	  	
+			rabbitTemplate.send("test-exchange", "test-key", message);	  	
 		}
 		
 		System.out.println("Messages are sent: " + input + " (correlationID: " + correlationID + ")");
